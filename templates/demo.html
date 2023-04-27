@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <!-- Awesome font icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="/static/css/style1.css">
+</head>
+<body>
+
+      <div class="sidebar">
+        <a href="/"><i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i> Home</a>
+        <a class="active" href="#"><i class="fa-solid fa-gauge fa-lg"></i>  Dashboard</a>
+        <a href="{% url 'save_screenshot' %}"><i class="fa-solid fa-cube fa-lg" style="color: #ffffff;"></i>  Screenshot</a>
+        <a href="#"><i class="fa-solid fa-calendar-check fa-lg" style="color: #ffffff;"></i>  Holiday</a>
+        <a href="#"><i class="fa-solid fa-gears fa-lg" style="color: #ffffff;"></i> Leave</a>
+        <a href="#"><i class="fa-solid fa-book fa-lg" style="color: #ffffff;"></i>  Payroll</a>
+        <a href="#"><i class="fa-solid fa-gears fa-lg" style="color: #ffffff;"></i> Leave Type</a>
+        <a href="#"><i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>  Members</a>
+        <a href="#"><i class="fa-solid fa-image fa-lg" style="color: #ffffff;"></i> File Upload</a>
+
+      </div>
+
+      <!-- header section starts  -->
+
+      <header class="header">
+        <div class="logo">
+            <a href="{% url 'home' %}"><i class="fa-solid fa-user-secret"></i>  TrackSoft</a>
+          </div>
+
+        <nav class="navbar">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'demo' %}">Demo</a>
+            <a href="{% url 'home' %}">About</a>
+            <a href="{% url 'Login_Page' %}">Log Out</a>
+        </nav>
+
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div class="app">
+        <div id="timer" class="timer">00:00:00</div>
+        <div class="buttons">
+            <button class="start" id="start" onclick="location.href='{% url 'script' %}' ">Start</button>
+            <button class="stop" id="stop" onclick="location.href='{% url 'script1' %}' ">Break</button>
+            <button class="reset" id="reset" disabled>Reset</button>
+        </div>
+    </div>
+
+    <table id="myTable">
+        <tr>
+          <th>Sr No.</th>
+          <th>Date</th>
+          <th>In time</th>
+          <th>Out time</th>
+        </tr>
+      </table>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackSoft</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+        <div class="logo">
+            <a href="{% url 'home' %}"><i class="fa-solid fa-user-secret"></i>  TrackSoft</a>
+          </div>
+
+        <nav class="navbar">
+            <a href="{% url 'home' %}">home</a>
+            <a href="{% url 'demo' %}">demo</a>
+            <a href="#about">about</a>
+            <a href="{% url 'Login_Page' %}">Log Out</a>
+        </nav>
+
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="image">
+            <img src="/static/images/monitoring.png" 
+                alt="employee-monitoring-image">
+        </div>
+
+        <div class="content">
+            <h3>Employee Monitoring</h3>
+            <p>
+                It's impossible to watch your employees every minute of the day. But TrackSoft can do it for you, creating a more productive workplace.
+            </p>
+            <a href="{% url 'Login_Page' %}" class="btn"> Log In <span class="fas fa-chevron-right"></span> </a>
+            <a href="{% url 'SignUp' %}" class="btn"> Register <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- features section starts  -->
+
+    <section class="features" id="features">
+
+        <h1 class="heading"> our <span>features</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <h3>Tracking</h3>
+                <p>See what's worked in a detailed way.</p>
+                <a href="{% url 'demo' %}" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-trophy"></i>
+                <h3>Scores</h3>
+                <p>Analyze tracking information and get productivity scores.</p>
+                <a href="{% url 'demo' %}" class="btn"> learn more <span
+                        class="fas fa-chevron-right"></span> </a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-camera"></i>
+                <h3>Office TV</h3>
+                <p>Watch your office computers to see what's being done.</p>
+                <a href="{% url 'demo' %}" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+
+            </div>
+
+    </section>
+
+    <!-- features section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> us </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="/static/images/productivity.jpg" alt="productivity-image">
+            </div> 
+
+            <div class="content">
+                <h3>With our ethical approach, everyone benefits!</h3>
+                <p>TrackSoft is committed to providing solutions that enhance visibility and productivity using an ethical approach that is focused on transparency and collaboration. Our platform does not use intrusive employee monitoring technologies like keystroke logging and video surveillance. Instead, we focus on the collection of contextual data that helps you achieve amazing things without sacrificing trust. And that means everyone wins!
+                </p>
+                <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"><span>blogs</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="/static/images/employeefraud.png" alt="employee-fraud-image">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <a href="#"> <i class="fas fa-calendar"></i> 10 march, 2023 </a>
+                        <a href="#"> <i class="fas fa-user"></i> by Kendra Gaffin </a>
+                    </div>
+                    <h3>Employee Fraud</h3>
+                    <p>Fraud is likely to be discovered only after it has been committed if you don't have a mechanism to keep an eye on your employees' computers.
+                        It's too late to take any type of significant action to stop additional fraud at that point... </p>
+                    <a href="https://www.insightful.io/blog/protect-business-from-employee-fraud" class="btn"> learn more <span
+                            class="fas fa-chevron-right"></span> </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="/static/images/benefits.png"
+                        alt="benefits-of-TrackSoft-image">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <a href="#"> <i class="fas fa-calendar"></i> 22 feb, 2023 </a>
+                        <a href="#"> <i class="fas fa-user"></i> by gavi </a>
+                    </div>
+                    <h3>7 Benefits of TrackSoft</h3>
+                    <p>Remote teams often lack the cohesiveness of in-office teams.
+                        Once making the move to a virtual work environment, many traditional workplace forms of communication, collaboration ....</p>
+                    <a href="https://www.insightful.io/blog/7-benefits-real-time-tracking-remote-workers"
+                        class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="/static/images/future.png"
+                        alt="future-of-jobs-images">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <a href="#"> <i class="fas fa-calendar"></i> 12 feb, 2023 </a>
+                        <a href="#"> <i class="fas fa-user"></i> by Kendra Gaffin </a>
+                    </div>
+                    <h3>The Future of Remote Work:</h3>
+                    <p>For the first time, working remotely is becoming the default setting.
+                        While we saw a surge of remote working during the pandemic, few thought that it would take over in-office working ....</p>
+                    <a href="https://www.insightful.io/blog/future-remote-work"
+                        class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- blogs section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="{% url 'home' %}"> <i class="fas fa-chevron-right"></i> home </a>
+                <a href="#features"> <i class="fas fa-chevron-right"></i> features </a>
+                <a href="#about"> <i class="fas fa-chevron-right"></i> about </a>
+                <a href="{% url 'demo' %}"> <i class="fas fa-chevron-right"></i> demo </a>
+            </div>
+
+            <div class="box">
+                <h3>features</h3>
+                <a href="#features"> <i class="fas fa-chevron-right"></i> time tracking </a>
+                <a href="#features"> <i class="fas fa-chevron-right"></i> activity monitoring </a>
+                <a href="#features"> <i class="fas fa-chevron-right"></i> screen monitoring </a>
+                <a href="#features"> <i class="fas fa-chevron-right"></i> attendance </a>
+                <a href="#features"> <i class="fas fa-chevron-right"></i> employee productivity </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +91-9005664879 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +91-9033255944 </a>
+                <a href="#"> <i class="fas fa-envelope"></i>Team.Hustle@gmail.com</a>
+                <a
+                    href="https://www.google.com/maps/place/Anjuman-I-Islam's+Kalsekar+Technical+Campus/@19.0000386,73.1023798,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7e83a36fbf179:0xbbb0905051e8c56e!8m2!3d19.0000386!4d73.1045685">
+                    <i class="fas fa-map-marker-alt"></i> panvel, india - 410206 </a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span>team hustle</span> | all rights reserved ©</div>
+
+    </section>
+    <!-- footer section ends -->
+
+</body>
+
+</html>
+
+
+
+
+
+
+

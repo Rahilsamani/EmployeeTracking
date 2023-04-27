@@ -1,0 +1,5 @@
+create database TrackSoft;
+
+use TrackSoft;
+
+CREATE TABLE users(Name VARCHAR(50) NOT NULL, Email VARCHAR(50) NOT NULL UNIQUE, Password VARCHAR(50) NOT NULL, CPassword VARCHAR(50) NOT NULL, usertype VARCHAR(15) NOT NULL);
